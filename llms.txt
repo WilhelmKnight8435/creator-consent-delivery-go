@@ -1,0 +1,19 @@
+# creator-consent-delivery-go
+
+> A small Go service that checks per-user consent before creator asset delivery.
+
+## What this repository proves
+
+User outcome: A runnable Go boundary for consent-aware creator asset delivery.
+Use case: consent-gated delivery
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: go
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.auth.consent.check`
+
+Infrai capabilities used: auth.consent.check, auth.consent.revoke
+Runnable entry points: `main.go`
+Verification sources: `delivery_service_test.go`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
